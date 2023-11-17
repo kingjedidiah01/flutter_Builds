@@ -25,6 +25,9 @@ class MyApp extends StatelessWidget {
   }
 }
 
+class MyHomePage {
+}
+
 class MyAppState extends ChangeNotifier {
   var current = WordPair.random();
   void getNext() {
@@ -37,6 +40,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var appState = context.watch<MyAppState>();
+    var pair = appState.current;
 
     return Scaffold(
       body: Column(
