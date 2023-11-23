@@ -25,9 +25,8 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      appBar: AppBar(
-        title: Text('This is the title'),
+    return  Scaffold(
+      appBar: AppBar(Text const Text('a message',),
       ),
     );
   }
